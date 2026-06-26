@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+   <div class="theme-toggle-container">
+       <button id="theme-toggle" aria-label="Toggle dark/light mode">
+           <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
+               <path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T441-664q0 70 41.5 124.5T588-466q6 1 12.5 1t12.5-1q-19 55-1.5 107.5T673-268q-39 31-87.5 49.5T480-120Z"/>
+           </svg>
+       </button>
+   </div>
+
+   <h1>To Do List</h1>
+   <div class="wrapper">
+     <form>
+        <div class="input-container">
+            <input type="text" id="todo-input" placeholder="What needs to be done?" autocomplete="off">
+            <input type="date" id="todo-date">
+        </div>
+        <button id="add-button" type="submit">ADD</button>
+     </form>
+     
+     <ul id="todo-list">
+        </ul>
+
+     <div id="todo-stats" class="todo-stats"></div>
+   </div>
+</body>
+</html>
